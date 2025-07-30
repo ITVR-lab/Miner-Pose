@@ -46,7 +46,7 @@ The **Miner-Pose** dataset fills a significant gap in the available datasets for
 
 The **DsLMF+** dataset was originally created for object detection tasks in underground coal mines, containing 138,004 images annotated with categories such as personnel, hydraulic shields, coal blocks, and more. For our dataset, we selected 7,986 images from **DsLMF+**, which contained annotations related to miner behaviors. These images were re-annotated with detailed human pose information, using the **COCO** keypoint annotation format to ensure compatibility with standard pose estimation benchmarks.
 
-![DsLMF+ Re-annotation Process](https://github.com/ITVR-lab/Miner-Pose/process.png)
+![DsLMF+ Re-annotation Process](https://github.com/ITVR-lab/Miner-Pose/blob/main/process.png)
 
 ### Miner-Pose Dataset Creation
 
