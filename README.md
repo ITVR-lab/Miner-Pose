@@ -2,13 +2,15 @@
 
 The **Miner-Pose** dataset is a large-scale dataset designed for human pose estimation in underground mining environments. Unlike existing public datasets which are primarily collected under well-lit, above-ground conditions, **Miner-Pose** is specifically tailored to the unique challenges posed by underground mining scenarios. It includes over 12,225 images collected from real-world mining environments and re-annotated data from the **DsLMF+** dataset, providing valuable data for mining safety and pose estimation research.
 
+![Miner-Pose Overview](https://github.com/your-username/Miner-Pose/images/overview.png)
+
 ## Dataset Overview
 
 - **Total Images**: 12,225 images
 - **Data Source**: Newly collected real-world images and reannotations from the DsLMF+ dataset.
 - **Pose Categories**: Various miner poses including crouching, bending, carrying tools, and other behaviors specific to mining tasks.
 - **Environment**: Underground mining settings with dense, cluttered, and occluded environments.
-  
+
 ## Dataset Access
 
 The **Miner-Pose** dataset is publicly available at:
@@ -29,20 +31,22 @@ The dataset contains:
 
 The **Miner-Pose** dataset fills a significant gap in the available datasets for human pose estimation in mining environments. Table 1 compares the **Miner-Pose** dataset with other human pose estimation datasets created for mine scenes.
 
-| Paper & Year | Dataset Name | Data Scale  | Public |
-|--------------|--------------|-------------|--------|
-| [C14, 2023]  | -            | -           | No     |
-| [Ref14, 2024] | Colliery-1   | 600 video clips | Partial |
-| [Bib10, 2024] | -            | 5916 images | No     |
-| [C15, 2025]  | -            | -           | No     |
-| [Bib11, 2025] | -            | 5808 images | No     |
-| **Ours, 2025** | **Miner-Pose** | **12,225 images** | **Yes** |
+| Year | Dataset Name | Data Scale  | Public |
+|------|--------------|-------------|--------|
+| 2023 | -            | -           | No     |
+| 2024 | Colliery-1   | 600 video clips | Partial |
+| 2024 | -            | 5916 images | No     |
+| 2025 | -            | -           | No     |
+| 2025 | -            | 5808 images | No     |
+| **2025** | **Miner-Pose** | **12,225 images** | **Yes** |
 
 ## Data Collection and Preprocessing
 
 ### Re-annotation of DsLMF+ Data
 
 The **DsLMF+** dataset was originally created for object detection tasks in underground coal mines, containing 138,004 images annotated with categories such as personnel, hydraulic shields, coal blocks, and more. For our dataset, we selected 7,986 images from **DsLMF+**, which contained annotations related to miner behaviors. These images were re-annotated with detailed human pose information, using the **COCO** keypoint annotation format to ensure compatibility with standard pose estimation benchmarks.
+
+![DsLMF+ Re-annotation Process](https://github.com/your-username/Miner-Pose/images/dslmf-process.png)
 
 ### Miner-Pose Dataset Creation
 
