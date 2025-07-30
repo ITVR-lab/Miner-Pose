@@ -1,8 +1,6 @@
 # Miner-Pose Dataset
 
-The **Miner-Pose** dataset is a large-scale dataset designed for human pose estimation in underground mining environments. Unlike existing public datasets which are primarily collected under well-lit, above-ground conditions, **Miner-Pose** is specifically tailored to the unique challenges posed by underground mining scenarios. It includes over 12,225 images collected from real-world mining environments and re-annotated data from the **DsLMF+** dataset, providing valuable data for mining safety and pose estimation research.
-
-![Miner-Pose Overview](https://github.com/your-username/Miner-Pose/images/overview.png)
+The **Miner-Pose** dataset is a large-scale dataset designed for human pose estimation in underground mining environments. Unlike existing public datasets which are primarily collected under well-lit, above-ground conditions, **Miner-Pose** is specifically tailored to the unique challenges posed by underground mining scenarios. It includes 12,225 images collected from real-world mining environments and re-annotated data from the **DsLMF+** dataset, providing valuable data for mining safety and pose estimation research.
 
 ## Dataset Overview
 
@@ -23,7 +21,7 @@ The dataset is hosted on GitHub and can be downloaded in full through the link a
 
 The dataset contains:
 
-- **Images**: Over 12,225 images collected from surveillance video clips in mining environments between 2021 and 2024.
+- **Images**: 12,225 images collected from surveillance video clips in mining environments between 2021 and 2024.
 - **Annotations**: Body keypoints and bounding boxes for miner poses, formatted according to the COCO keypoint annotation standard.
 - **Format**: Annotations are provided in JSON format, and images are in JPG format.
 
