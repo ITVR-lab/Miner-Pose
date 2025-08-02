@@ -1,80 +1,93 @@
-# Miner-Pose Dataset
+# 🧱 Miner-Pose Dataset
 
-The **Miner-Pose** dataset is a large-scale dataset designed for human pose estimation in underground mining environments. Unlike existing public datasets which are primarily collected under well-lit, above-ground conditions, **Miner-Pose** is specifically tailored to the unique challenges posed by underground mining scenarios. It includes 12,225 images collected from real-world mining environments and re-annotated data from the **DsLMF+** dataset, providing valuable data for mining safety and pose estimation research.
+The **Miner-Pose** dataset is a large-scale dataset designed for human pose estimation in underground mining environments. Unlike existing public datasets which are primarily collected under well-lit, above-ground conditions, **Miner-Pose** is specifically tailored to the unique challenges posed by underground mining scenarios. It includes **12,225 images** collected from real-world mining environments and re-annotated data from the **DsLMF+** dataset, providing valuable data for mining safety and pose estimation research.
 
-## Dataset Overview
+---
 
-- **Total Images**: 12,225 images
-- **Data Source**: Newly collected real-world images and reannotations from the DsLMF+ dataset.
-- **Pose Categories**: Various miner poses including crouching, bending, carrying tools, and other behaviors specific to mining tasks.
-- **Environment**: Underground mining settings with dense, cluttered, and occluded environments.
+## 📊 Dataset Overview
 
-## Dataset Access
+- **Total Images**: 12,225
+- **Data Source**: Real-world mining footage + reannotations from the DsLMF+ dataset
+- **Pose Categories**: Crouching, bending, carrying tools, and other mining behaviors
+- **Environment**: Underground mining conditions with occlusion, clutter, and poor lighting
 
-The **Miner-Pose** dataset is publicly available at:
+---
 
-CHINA-Baidu Netdisk: https://pan.baidu.com/s/1_otJGyCM1NCT3RBdsO-N0w?pwd=5555
+## 📥 Dataset Access
 
-Others-Google Drive:
+> 🔗 **The Miner-Pose dataset is publicly available at the following links:**
 
-The dataset is hosted on GitHub and can be downloaded in full through the link above. Please refer to the license for terms of use and redistribution.
+- 🇨🇳 **[Baidu Netdisk (国内用户)](https://pan.baidu.com/s/1_otJGyCM1NCT3RBdsO-N0w?pwd=5555)**  
+  Access code: `5555`
 
-## Dataset Content
+- 🌍 **Google Drive (for international users)**  
+  👉 *(Insert your Google Drive link here)*
 
-The dataset contains:
+> 📝 The dataset is also hosted on GitHub for accessing code and annotations.  
+> Please refer to the license section below for terms of use and redistribution.
 
-- **Images**: 12,225 images collected from surveillance video clips in mining environments between 2021 and 2024.
-- **Annotations**: Body keypoints and bounding boxes for miner poses, formatted according to the COCO keypoint annotation standard.
-- **Format**: Annotations are provided in JSON format, and images are in JPG format.
+---
 
-## Comparison to Other Datasets
+## 📁 Dataset Content
 
-The **Miner-Pose** dataset fills a significant gap in the available datasets for human pose estimation in mining environments. Table 1 compares the **Miner-Pose** dataset with other human pose estimation datasets created for mine scenes.
+- **Images**: 12,225 JPG images extracted from surveillance videos (2021–2024)
+- **Annotations**: Human body keypoints and bounding boxes (COCO keypoint format)
+- **Format**: JPG images and JSON annotations
 
-| Year | Dataset Name | Data Scale  | Public |
-|------|--------------|-------------|--------|
-| 2023 | -            | -           | No     |
-| 2024 | Colliery-1   | 600 video clips | Partial |
-| 2024 | -            | 5916 images | No     |
-| 2025 | -            | -           | No     |
-| 2025 | -            | 5808 images | No     |
+---
+
+## 📌 Comparison with Existing Datasets
+
+| Year | Dataset Name | Data Scale       | Public |
+|------|--------------|------------------|--------|
+| 2023 | -            | -                | No     |
+| 2024 | Colliery-1   | 600 video clips  | Partial |
+| 2024 | -            | 5916 images      | No     |
+| 2025 | -            | -                | No     |
+| 2025 | -            | 5808 images      | No     |
 | **2025** | **Miner-Pose** | **12,225 images** | **Yes** |
 
-## Data Collection and Preprocessing
+---
 
-### Re-annotation of DsLMF+ Data
+## 🛠️ Data Collection and Annotation Process
 
-The **DsLMF+** dataset was originally created for object detection tasks in underground coal mines, containing 138,004 images annotated with categories such as personnel, hydraulic shields, coal blocks, and more. For our dataset, we selected 7,986 images from **DsLMF+**, which contained annotations related to miner behaviors. These images were re-annotated with detailed human pose information, using the **COCO** keypoint annotation format to ensure compatibility with standard pose estimation benchmarks.
+### 🔄 Re-annotation of DsLMF+ Data
+
+The **DsLMF+** dataset originally supported object detection in coal mines. We selected **7,986 images** containing miner behaviors and re-annotated them with **COCO keypoints** for pose estimation.
 
 ![DsLMF+ Re-annotation Process](https://github.com/ITVR-lab/Miner-Pose/blob/main/process.png)
 
-### Miner-Pose Dataset Creation
+### 📹 Miner-Pose Dataset Creation Steps
 
-Our **Miner-Pose** dataset was created through a systematic process, which includes the following steps:
+1. **Data Collection**: 400 surveillance video clips recorded (2021–2024) in underground mines  
+2. **Data Cleaning**: Removal of redundant/invalid frames and resizing  
+3. **Initial Annotation**: Auto-labeling via X-AnyLabeling with COCO format  
+4. **Manual Refinement**: Final corrections using Labelme
 
-1. **Data Collection**: We collected 400 surveillance video clips from various critical areas within underground mines. These clips, recorded between 2021 and 2024, were processed to extract frames in JPG format.
-   
-2. **Data Cleaning**: The extracted images were cleaned to remove redundant or invalid samples, and all retained images were resized to a consistent resolution for easier annotation.
+---
 
-3. **Initial Annotations**: Using the **X-AnyLabeling** tool, we pre-annotated the images with human pose keypoints based on the **COCO** format. This step improved labeling efficiency.
+## 🧪 Dataset Split
 
-4. **Manual Refinement**: To ensure accuracy, we manually refined the keypoints using the **Labelme** tool.
+- **Training Set**: 9,780 images (80%)
+- **Validation Set**: 2,445 images (20%)
 
-As a result, the **Miner-Pose** dataset contains high-quality, diverse images suitable for human pose estimation in mining scenarios.
+---
 
-## Dataset Split
+## ✅ Usage Guidelines
 
-The dataset is randomly divided into training and validation sets in an 80:20 ratio:
+- **Intended Use**: For developing pose estimation models in mining safety applications
+- **Ethical Considerations**: Data collected under privacy-respecting and ethical protocols. Please ensure legal and ethical compliance in further use.
 
-- **Training Set**: 9,780 images
-- **Validation Set**: 2,445 images
+---
 
-## Usage Guidelines
+## 📄 License
 
-- **Intended Use**: This dataset is primarily intended for developing and benchmarking human pose estimation models in the context of underground mining safety and monitoring.
-- **Ethical Considerations**: The dataset was collected following ethical guidelines to ensure the safety and privacy of the miners involved in the recordings. Users are encouraged to ensure compliance with all relevant laws and regulations when utilizing the dataset.
+This dataset is released under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**.  
+You are free to share and adapt the dataset, with appropriate credit.
 
-## Citation
+---
 
-If you use the **Miner-Pose** dataset in your research, please cite it as follows:
+## 📚 Citation
+
+If you use the **Miner-Pose** dataset in your research, please cite:
 
