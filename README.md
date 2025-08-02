@@ -13,7 +13,8 @@ The **Miner-Pose** dataset is a large-scale dataset designed for human pose esti
 
 The **Miner-Pose** dataset is publicly available at:
 
-https://pan.baidu.com/s/1_otJGyCM1NCT3RBdsO-N0w?pwd=5555
+CHINA-Baidu Netdisk: https://pan.baidu.com/s/1_otJGyCM1NCT3RBdsO-N0w?pwd=5555
+Others-Google Drive:
 
 The dataset is hosted on GitHub and can be downloaded in full through the link above. Please refer to the license for terms of use and redistribution.
 
