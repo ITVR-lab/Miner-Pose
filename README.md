@@ -55,7 +55,7 @@ The **Miner-Pose** dataset is a large-scale dataset designed for human pose esti
 
 ### 📹 Miner-Pose Dataset Creation Steps
 
-1. **Data Collection**: 400 surveillance video clips recorded (2021–2024) in underground mines  
+1. **Data Collection**: Our team recorded 400 surveillance video clips (2021–2024) in underground mines, contributing over 4,000 original images to the dataset, in addition to 7,986 re-annotated images from DsLMF+.
 2. **Data Cleaning**: Removal of redundant/invalid frames and resizing  
 3. **Initial Annotation**: Auto-labeling via X-AnyLabeling with COCO format  
 4. **Manual Refinement**: Final corrections using Labelme
