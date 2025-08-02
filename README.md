@@ -21,7 +21,7 @@ The **Miner-Pose** dataset is a large-scale dataset designed for human pose esti
   Access code: `5555`
 
 - 🌍 **Google Drive (for international users)**  
-  👉 *(Insert your Google Drive link here)*
+  👉 *(https://drive.google.com/file/d/1YM_hInwtQthsSDY4ZMvyMDgTIldpZtiy/view?usp=sharing)*
 
 > 📝 The dataset is also hosted on GitHub for accessing code and annotations.  
 > Please refer to the license section below for terms of use and redistribution.
