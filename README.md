@@ -87,7 +87,7 @@ You are free to share and adapt the dataset, with appropriate credit.
 
 If you use the **Miner-Pose** dataset in your research, please cite:
 
-> [Insert BibTeX or citation here once available]
+> [ Efficient Human Pose Estimation in Complex Coal Mining Scenes via Keypoint Partitioning Adaptive Convolution]-in review
 
 > 📝 **Acknowledgment**:  
 > We gratefully acknowledge the creators of the **DsLMF+** dataset, which served as the source for 7,986 images in our dataset.  
