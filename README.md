@@ -51,11 +51,7 @@ The **Miner-Pose** dataset is a large-scale dataset designed for human pose esti
 
 ## 🛠️ Data Collection and Annotation Process
 
-### 🔄 Re-annotation of DsLMF+ Data
-
-The **DsLMF+** dataset originally supported object detection in coal mines. We selected **7,986 images** containing miner behaviors and re-annotated them with **COCO keypoints** for pose estimation.
-
-![DsLMF+ Re-annotation Process](https://github.com/ITVR-lab/Miner-Pose/blob/main/process.png)
+![Annotation Process](https://github.com/ITVR-lab/Miner-Pose/blob/main/process.png)
 
 ### 📹 Miner-Pose Dataset Creation Steps
 
