@@ -108,3 +108,12 @@ If you use the **Miner-Pose** dataset in your research, please cite:
   year={2026},
   publisher={Elsevier}
 }
+```
+
+> 📝 **Acknowledgment**
+>
+> We gratefully acknowledge the creators of the **DsLMF+** dataset, which served as the source for 7,986 images in our dataset.
+>
+> The original DsLMF+ dataset and its publication are available at:
+>
+> 🔗 https://doi.org/10.1038/s41597-023-02322-9
