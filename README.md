@@ -94,3 +94,29 @@ By requesting or accessing the dataset, applicants agree to comply with the data
 
 This dataset is released under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**.  
 You are free to share and adapt the dataset with appropriate credit.
+
+---
+
+## 📚 Citation
+
+If you use the **Miner-Pose** dataset in your research, please cite:
+
+```bibtex
+@article{wu2026efficient,
+  title={Efficient human pose estimation in complex coal mining scenes via Keypoint Partitioning Adaptive Convolution},
+  author={Wu, Jin and Zhou, Huaping and Meng, Xiangrui and Wu, Tao},
+  journal={Alexandria Engineering Journal},
+  volume={137},
+  pages={312--328},
+  year={2026},
+  publisher={Elsevier}
+}
+```
+
+> 📝 **Acknowledgment**
+>
+> We gratefully acknowledge the creators of the **DsLMF+** dataset, which served as the source for 7,986 images in our dataset.
+>
+> The original DsLMF+ dataset and its publication are available at:
+>
+> 🔗 https://doi.org/10.1038/s41597-023-02322-9
