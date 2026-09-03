@@ -1,13 +1,13 @@
 # 🧱 Miner-Pose Dataset
 
-The **Miner-Pose** dataset is a large-scale dataset designed for human pose estimation in underground mining environments. Unlike existing public datasets which are primarily collected under well-lit, above-ground conditions, **Miner-Pose** is specifically tailored to the unique challenges posed by underground mining scenarios. It includes **12,225 images** collected from real-world mining environments and re-annotated data from the **DsLMF+** dataset, providing valuable data for mining safety and pose estimation research.
+The **Miner-Pose** dataset is a large-scale dataset designed for human pose estimation in underground mining environments. Unlike existing public datasets, which are primarily collected under well-lit, above-ground conditions, **Miner-Pose** is specifically tailored to the unique challenges posed by underground mining scenarios. It includes **12,225 images** collected from real-world mining environments and re-annotated data from the **DsLMF+** dataset, providing valuable data for mining safety and pose estimation research.
 
 ---
 
 ## 📊 Dataset Overview
 
 - **Total Images**: 12,225
-- **Data Source**: Real-world mining footage + reannotations from the DsLMF+ dataset
+- **Data Source**: Real-world mining footage + re-annotations from the DsLMF+ dataset
 - **Pose Categories**: Crouching, bending, carrying tools, and other mining behaviors
 - **Environment**: Underground mining conditions with occlusion, clutter, and poor lighting
 
@@ -15,27 +15,30 @@ The **Miner-Pose** dataset is a large-scale dataset designed for human pose esti
 
 ## 📥 Dataset Access
 
-> 🔗 **The Miner-Pose dataset is publicly available through Google Drive:**
+> [!IMPORTANT]
+> **A completed application form is required for every access request.**
+>
+> We have received a large number of incomplete, automated, duplicate, and bulk access requests, including spam. These requests are difficult to review and have significantly increased processing time. To help us verify legitimate academic and research use, all applicants must complete the repository's [Dataset Access Application Form](./DATASET_ACCESS_APPLICATION.md) before requesting access.
 
-- 🌍 **Google Drive**  
-  👉 https://drive.google.com/file/d/1YM_hInwtQthsSDY4ZMvyMDgTIldpZtiy/view?usp=sharing
+### How to Apply
 
-> 📝 **Access Request Required**  
->
-> To help us track dataset usage and ensure responsible research use, please complete the access request information before downloading the dataset.
->
-> Please provide:
->
-> - Full name
-> - Affiliation / Institution
-> - Email address
-> - Research purpose
-> - Intended use of the dataset
->
-> By accessing the dataset, users agree to comply with the dataset license and citation requirements.
+1. Download and complete the [Dataset Access Application Form](./DATASET_ACCESS_APPLICATION.md).
+2. Submit the completed form through the private contact or submission channel designated by the repository maintainers.
+3. Request access to the dataset through Google Drive:
+   - 🌍 **Google Drive**: https://drive.google.com/file/d/1YM_hInwtQthsSDY4ZMvyMDgTIldpZtiy/view?usp=sharing
 
-> 📝 The dataset is also hosted on GitHub for accessing code and annotations.  
-> Please refer to the license section below for terms of use and redistribution.
+Please note:
+
+- A Google Drive access request **without a completed application form will not be processed**.
+- Each form must represent **one individual applicant and one clearly described research project**.
+- Incomplete, unverifiable, automated, duplicate, or bulk applications may be rejected without further review.
+- Applicants should provide an institutional email address whenever possible.
+- Please do not publish personal information in a public GitHub issue. Use only the private submission channel designated by the maintainers.
+- Due to the volume of requests, review may take additional time. Please avoid sending repeated follow-up requests.
+
+By requesting or accessing the dataset, applicants agree to comply with the dataset license, citation requirements, and all applicable legal and ethical obligations.
+
+> 📝 The repository also provides the associated code and annotations. Please refer to the license section below for the terms of use and redistribution.
 
 ---
 
@@ -67,8 +70,8 @@ The **Miner-Pose** dataset is a large-scale dataset designed for human pose esti
 ### 📹 Miner-Pose Dataset Creation Steps
 
 1. **Data Collection**: Our team recorded 400 surveillance video clips (2021–2024) in underground mines, contributing over 4,000 original images to the dataset, in addition to 7,986 re-annotated images from DsLMF+.
-2. **Data Cleaning**: Removal of redundant/invalid frames and resizing
-3. **Initial Annotation**: Auto-labeling via X-AnyLabeling with COCO format
+2. **Data Cleaning**: Removal of redundant or invalid frames and image resizing
+3. **Initial Annotation**: Auto-labeling via X-AnyLabeling in COCO format
 4. **Manual Refinement**: Final corrections using Labelme
 
 ---
@@ -82,38 +85,12 @@ The **Miner-Pose** dataset is a large-scale dataset designed for human pose esti
 
 ## ✅ Usage Guidelines
 
-- **Intended Use**: For developing pose estimation models in mining safety applications
-- **Ethical Considerations**: Data collected under privacy-respecting and ethical protocols. Please ensure legal and ethical compliance in further use.
+- **Intended Use**: Developing pose estimation models for mining safety applications
+- **Ethical Considerations**: The data were collected under privacy-respecting and ethical protocols. Users must ensure legal and ethical compliance in any further use.
 
 ---
 
 ## 📄 License
 
 This dataset is released under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**.  
-You are free to share and adapt the dataset, with appropriate credit.
-
----
-
-## 📚 Citation
-
-If you use the **Miner-Pose** dataset in your research, please cite:
-
-```bibtex
-@article{wu2026efficient,
-  title={Efficient human pose estimation in complex coal mining scenes via Keypoint Partitioning Adaptive Convolution},
-  author={Wu, Jin and Zhou, Huaping and Meng, Xiangrui and Wu, Tao},
-  journal={Alexandria Engineering Journal},
-  volume={137},
-  pages={312--328},
-  year={2026},
-  publisher={Elsevier}
-}
-```
-
-> 📝 **Acknowledgment**
->
-> We gratefully acknowledge the creators of the **DsLMF+** dataset, which served as the source for 7,986 images in our dataset.
->
-> The original DsLMF+ dataset and its publication are available at:
->
-> 🔗 https://doi.org/10.1038/s41597-023-02322-9
+You are free to share and adapt the dataset with appropriate credit.
